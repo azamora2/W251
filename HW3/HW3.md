@@ -1,4 +1,4 @@
-# Homework 2 by Andres Zamora, instructions to run
+# Homework  by Andres Zamora, instructions to run
 
 ## look at my S3 bucket
 
