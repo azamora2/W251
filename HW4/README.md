@@ -5,22 +5,23 @@ ConvnetJS is a very simple yet powerful JavaScript library for Convolutional Neu
 and now the leader of the Autonomous Driving project at Tesla.  The library runs directly in the browser and uses the CPU of your computer for training (just one core, so it will be woefully slow on large networks).  It is highly interactive, however, and enables you to rapidly experiment with small nets. You can read more about ConvNetJs and its api at http://cs.stanford.edu/people/karpathy/convnetjs/
 Our first lab aligns with the 2D classification example available here: http://cs.stanford.edu/people/karpathy/convnetjs/demo/classify2d.html
 Once you hit this page, the network starts running.  
-* Add a few red dots in previously green areas by clicking the left mouse button.  Is the network able to adjust and correctly predict the color now?
-* Add a few green dots in previously red areas by clicking the shift left mouse button.  Can the network adapt?
-* Review the network structure in the text box.  Can you name the layers and explain what they do?
-* Reduce the number of neurons in the conv layers and see how the network responds. Does it become less accurate?
+* Add a few red dots in previously green areas by clicking the left mouse button.  Is the network able to adjust and correctly predict the color now? YEs it is the network is able to adapt an correctly predict the areas where the circles were added
+* Add a few green dots in previously red areas by clicking the shift left mouse button.  Can the network adapt? yes
+* Review the network structure in the text box.  Can you name the layers and explain what they do? A fully connected layer is a layer that takes the input from the previous layer and generates and classifies the features obtained
+* Reduce the number of neurons in the conv layers and see how the network responds. Does it become less accurate? The network becomes faster but less accurate and generalized more seeming to underfit
 * Increase the number of neurons and layers and cause an overfit.  Make sure you understand the concept
-* Play with activation functions.. -- relu vs sigmoid vs tanh... Do you see a difference ? Relu is supposed to be faster but less accurate.
+* Play with activation functions.. -- relu vs sigmoid vs tanh... Do you see a difference ? Relu is supposed to be faster but less accurate.yes relu seems to be faster, and sigmoid and tanh seem more or less the same but tanh seems better.
 
 #### 2. ConvnetJS MNIST demo
+https://towardsdatascience.com/covolutional-neural-network-cb0883dd6529
 In this lab, we will look at the processing of the MNIST data set using ConvnetJS.  This demo uses this page: http://cs.stanford.edu/people/karpathy/convnetjs/demo/mnist.html
 The MNIST data set consists of 28x28 black and white images of hand written digits and the goal is to correctly classify them.  Once you load the page, the network starts running and you can see the loss and predictions change in real time.  Try the following:
-* Name all the layers in the network, describe what they do.
-* Experiment with the number  and size of filters in each layer.  Does it improve the accuracy?
-* Remove the pooling layers.  Does it impact the accuracy?
-* Add one more conv layer.  Does it help with accuracy?
-* Increase the batch size.  What impact does it have?
-* What is the best accuracy you can achieve? Are you over 99%? 99.5%?
+* Name all the layers in the network, describe what they do. first you have the inpu layer:Input layer in CNN should contain image data. You need to reshape it into a single column. Suppose you have image of dimension 28 x 28 =784, you need to convert it into 784 x 1 before feeding into input. Then you have the convolutional layer: Convo layer is sometimes called feature extractor layer because features of the image are get extracted within this layer. you ably a filter matrix to the image depending on how many chanels you have and you take strides to make a matrix smaller other wise the computation would be too expensive. The you have the pooling layer: Pooling layer is used to reduce the spatial volume of input image after convolution. It is used between two convolution layer. If we apply FC after Convo layer without applying pooling or max pooling, then it will be computationally expensive and we don’t want it. So, the max pooling is only way to reduce the spatial volume of input image. In the above example, we can apply max pooling in single depth slice with Stride of 2. You can observe the 4 x 4 dimension input is reduce to 2 x 2 dimension. you usually do max pooling where you get the maximum number from eachstride of a filter. The you have the sofmax layer: softmax is for multi-classification.
+* Experiment with the number  and size of filters in each layer.  Does it improve the accuracy?the more filters the higher the validation accuracy
+* Remove the pooling layers.  Does it impact the accuracy? removing the pooling layers worstens the accuracy
+* Add one more conv layer.  Does it help with accuracy? one more conv layer makes accuracy improve more rapidly
+* Increase the batch size.  What impact does it have? Validation accuracy stays quite the same
+* What is the best accuracy you can achieve? Are you over 99%? 99.5%? 0.96
 
 #### 3. Build your own model in Keras
 The [Conversation AI](https://conversationai.github.io/) team, a research initiative founded by [Jigsaw](https://jigsaw.google.com/) and Google (both a part of Alphabet) are working on tools to help improve online conversation. One area of focus is the study of negative online behaviors, like toxic comments (i.e. comments that are rude, disrespectful or otherwise likely to make someone leave a discussion).   
