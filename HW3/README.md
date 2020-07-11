@@ -6,7 +6,7 @@
 -I used the same topic for the local TX2 Alpine broker and the remote VM Alpine broker called `test_topic`, only one topic was needed. In the future if several telemetry data from various devices is being recorded then various test topics may be needed
 -I used the default Qos of 0, which is the default and work properly. I attempted QoS 1 and 2 which is for messages that have ben sent but not completely acknowledged. I decided to use QoS of 0 to ensure that the messages are transmitted in a quick fashion and for now there are no terrible consequences if messages get lost.
 
-## First create the bridge alpine container and the forwarding alpine container connected to the same network locally in the TW-2
+## First create the bridge alpine container and the forwarding alpine container connected to the same network locally in the TX-2
 
 ```
 # Create a bridge:
