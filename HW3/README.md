@@ -50,7 +50,7 @@ docker run -e DISPLAY=$DISPLAY --privileged --network hw03 --env QT_X11_NO_MITSH
 - Install VIM, PIP, and numpy in the CUDA container
 
 ```
-apt-get install VIM
+apt-get install vim
 apt-get install python-pip
 pip install numpy
 ```
