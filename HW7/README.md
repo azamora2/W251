@@ -5,6 +5,7 @@
 - Mount everything just like for homework3 but be mindful of assigning the right Us location when doing the final mount command
 - The files that changed from homework 3 to homework 7 are the input notebook file and the saver.py file both attached in this folder
 - The base docker container in the TX2 was the tenssort container in lab 5
+- The section of code that needs to be run in the notebook to send the images to the object storage is the two cells under the heading by the name of 'REAL CODE'
 ### Questions
 * Describe your solution in detail.  What neural network did you use? What dataset was it trained on? What accuracy does it achieve?
 A mobilenet SSD(single shot multibox detector) based face detector with pretrained model provided, powered by tensorflow object detection api, trained by WIDERFACE dataset.It achieves 99% accuracy.
