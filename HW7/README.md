@@ -3,6 +3,7 @@
 ## look at my S3 bucket
 - https://andresito-cos-standard-x95.s3.us-south.cloud-object-storage.appdomain.cloud/
 - Mount everything just like for homework3 but be mindful of assigning the right Us location when doing the final mount command
+- The files that changed from homework 3 to homework 7 are the input notebook file and the saver.py file both attached in this folder
 ### Questions
 * Describe your solution in detail.  What neural network did you use? What dataset was it trained on? What accuracy does it achieve?
 A mobilenet SSD(single shot multibox detector) based face detector with pretrained model provided, powered by tensorflow object detection api, trained by WIDERFACE dataset.It achieves 99% accuracy.
