@@ -12,7 +12,7 @@ Yes it achieves very good accuracy. I would use this solution to develop a produ
 One frame per second. The bottleneck occurs when opening the image path to read the image
 * Which is a better quality detector: the OpenCV or yours? 
 OpenCV has a faster frame rate but mine seems to have better accuracy.
-```
+
 - instructions Mount the S3 bucket in the VM instance using the following command (Make sure you get the correct area in the US):
 
 ```
