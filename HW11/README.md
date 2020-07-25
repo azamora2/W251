@@ -1,7 +1,7 @@
-- What parameters did you change?
-- What values did you try?
-- Did you try any other changes that made things better or worse?
-- Did they improve or degrade the model? Did you have a test run with 100% of the scores above 200?
-- Based on what you observed, what conclusions can you draw about the different parameters and their values?
-- What is the purpose of the epsilon value?
-- Describe "Q-Learning".
+- What parameters did you change? I changes the density of the first layer, the density of the second layer 
+- What values did you try? for the first layer I started in 100 and went up to 600, and for the second layer I started in 100 as well and went up to 300
+- Did you try any other changes that made things better or worse? I assigned a maximum number of steps per episode so that the model would train faster
+- Did they improve or degrade the model? Did you have a test run with 100% of the scores above 200? The chages improved the model an improved the ability to train the model. I did not have a test run with 100% of the scores above 200, a few of them were below
+- Based on what you observed, what conclusions can you draw about the different parameters and their values? that the more nuerons that a layer has the bettwer the network is going to be at generating the appropiate results and at learning
+- What is the purpose of the epsilon value? epsilon is the value that decides whether we are using the Q-function to determine our next action or whether we take a random sample of the action space. This is good because we are not stopping to explore after we found a Q-value greater zero. Instead we are starting off exploring the action space and after every game played we decrease epsilon until reaching minimum. With enough exploration done, we can start exploiting the learnt.
+- Describe "Q-Learning". Q-learning is a model-free reinforcement learning algorithm used to make an agent learn what action to take under what circumstances. Q-learning is a process that gives a neral network a memory in form of a Q-table. The table consists of size states x actions and stores a value for each state-action combination. The values in the table are called Q-values and estimate the reward we get by taking a certain action. Q-values represent the “quality” of an action taken from that state. Higher Q-values imply better chances of getting greater rewards.
