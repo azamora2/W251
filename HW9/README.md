@@ -8,9 +8,13 @@ No because the eval loss is still decreasing
 * Were you overfitting?
 yes because the eval loss was greater than the training loss
 * Were your GPUs fully utilized?
-Yes, photo
+Yes
+![Alt text](https://github.com/azamora2/W251/blob/master/HW9/p100-1.png "p100-1")
+![Alt text](https://github.com/azamora2/W251/blob/master/HW9/p100-2.png "p100-2")
 * Did you monitor network traffic (hint:  ```apt install nmon ```) ? Was network the bottleneck?
-No there was no network bottleneck, photo
+No there was no network bottleneck
+![Alt text](https://github.com/azamora2/W251/blob/master/HW9/network1.png "p100-1")
+![Alt text](https://github.com/azamora2/W251/blob/master/HW9/network2.png "p100-2")
 * Take a look at the plot of the learning rate and then check the config file.  Can you explan this setting?
 As expected in training the learning rate increases and subsequently decreases.
 * How big was your training set (mb)? How many training lines did it contain?
