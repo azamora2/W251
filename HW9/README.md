@@ -16,6 +16,7 @@ As expected in training the learning rate increases and subsequently decreases.
 * How big was your training set (mb)? How many training lines did it contain?
 971 mb and 4.5 million lines.
 * What are the files that a TF checkpoint is comprised of?
+![Alt text](https://github.com/azamora2/W251/blob/master/HW9/checkpointfiles.png "Checkpoint file")
 * How big is your resulting model checkpoint (mb)?
 697M
 * Remember the definition of a "step". How long did an average step take?
