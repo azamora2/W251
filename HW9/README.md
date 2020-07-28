@@ -1,4 +1,11 @@
 ### HW9
+
+* use the following commang to pull the  checkpoint files from the vm to the mac locally and or TX2. Run the command in the mac or on the TX2. 
+
+```
+scp -i /root/.ssh/id_rsa  root@158.176.83.236:/root/HW9stuff/* /Users/azamora2/downloads/scp1
+```
+
 ### Submission
 
 * How long does it take to complete the training run? (hint: this session is on distributed training, so it *will* take a while)
