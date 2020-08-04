@@ -19,8 +19,8 @@ LOCAL_MQTT_HOST="mosquitto2"
 LOCAL_MQTT_PORT=1883
 LOCAL_MQTT_TOPIC="test_topic"
 
-facedetector_path = '/tf/face-mask-detector4/face_detector/'
-model_path = "/tf/face-mask-detector4/face_detector/facemask_detector.model"
+facedetector_path = '/tf/face-mask-detector4/facemask_detector/'
+model_path = "/tf/face-mask-detector4/facemask_detector/facemask_detector.model"
 confidence_threshold = 0.7
 
 # load serialized face detector model
