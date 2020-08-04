@@ -11,8 +11,8 @@ import cv2
 import os
 
 image_path = "/tf/face-mask-detector4/examples/Con_cubrebocas.jpg"
-facedetector_path = '/tf/face-mask-detector4/face_detector/'
-model_path = "/tf/face-mask-detector4/face_detector/facemask_detector.model"
+facedetector_path = '/tf/face-mask-detector4/facemask_detector/'
+model_path = "/tf/face-mask-detector4/facemask_detector/facemask_detector.model"
 confidence_threshold = 0.7
 
 # load serialized face detector model
