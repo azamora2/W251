@@ -72,7 +72,7 @@ thank you
 The results after this endevour were the files in te object storage: https://s3.us-south.cloud-object-storage.appdomain.cloud/andres-cos-standard-api/
 
 and the following after trainig as well as some evaluated images below (cubrebocas is face mask in spanish and sin cubre bocas is no facemask p.s. sorry I forgot to change it) bellow is also the evaluation of the trained head networ build on top of a face regognition imagenet V2 model:
-
+```
 -------------EVALUATING HEAD NETWORK----------------
               precision    recall  f1-score   support
    with_mask       1.00      1.00      1.00       138
@@ -81,7 +81,7 @@ without_mask       1.00      1.00      1.00       138
    macro avg       1.00      1.00      1.00       276
 weighted avg       1.00      1.00      1.00       276
 --------------------SAVING MODEL---------------------
-
+```
 ![Alt text](https://github.com/azamora2/W251/blob/master/FinalProject/plot.png "accuracy and loss graph")
 ![Alt text](https://github.com/azamora2/W251/blob/master/FinalProject/carmen.jpg "carmen")
 ![Alt text](https://github.com/azamora2/W251/blob/master/FinalProject/andres_cubrebocas.jpg "Facemask")
