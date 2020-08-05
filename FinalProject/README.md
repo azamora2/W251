@@ -1,7 +1,10 @@
 # Final project
 The motivation behind this project was to build a face mask detection model that would detect if you were not wearing a mask and send over thos images to cloud storage so that a company that is potentially interested can detect whether certain employees or customers are not wearing their facemasks and keep a record of this. my images are here: https://s3.us-south.cloud-object-storage.appdomain.cloud/andres-cos-standard-api/
 ## instructions for running the face mask detector
+- If you want to create your own dataset dowload your own set of images with the `download_faces.sh` script in this file
+- Afterwads you can label half of them by putting the png of a facemask on top of it using picmonkey.com
 
+## To Run the code once you have the data
 - First you need to run the training in a v100 vsi with flavor AC2_8X60X10
 
 ```
