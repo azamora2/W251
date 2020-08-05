@@ -68,4 +68,6 @@ thank you
 
 The results after this endevour were the files in te object storage: https://s3.us-south.cloud-object-storage.appdomain.cloud/andres-cos-standard-api/
 
-and the following after trainig as well as some evaluated images below
+and the following after trainig as well as some evaluated images below:
+
+![Alt text](https://github.com/azamora2/W251/blob/master/FinalProject/plot.png "accuracy and loss graph")
