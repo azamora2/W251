@@ -1,6 +1,6 @@
 #!/bin/bash
 
-MAX=690
+MAX=600
 if [[ ! -z "$1" ]]; then
     MAX=$1
 fi
