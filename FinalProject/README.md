@@ -71,7 +71,7 @@ thank you
 
 The results after this endevour were the files in te object storage: https://s3.us-south.cloud-object-storage.appdomain.cloud/andres-cos-standard-api/
 
-and the following after trainig as well as some evaluated images below (cubrebocas is face mask in spanish and sin cubre bocas is no facemask p.s. sorry I forgot to change it) bellow is also the evaluation of the trained head networ build on top of a face regognition imagenet V2 model:
+and the following after trainig as well as some evaluated images below (cubrebocas is face mask in spanish and sin cubre bocas is no facemask p.s. sorry I forgot to change it) bellow is also the evaluation of the trained head network build on top of a face regognition imagenet V2 model:
 ```
 -------------EVALUATING HEAD NETWORK----------------
               precision    recall  f1-score   support
