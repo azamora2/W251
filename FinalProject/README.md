@@ -71,6 +71,6 @@ The results after this endevour were the files in te object storage: https://s3.
 and the following after trainig as well as some evaluated images below:
 
 ![Alt text](https://github.com/azamora2/W251/blob/master/FinalProject/plot.png "accuracy and loss graph")
-![Alt text](https://github.com/azamora2/W251/blob/master/FinalProject/carmen.png "carmen")
-![Alt text](https://github.com/azamora2/W251/blob/master/FinalProject/andres_cubrebocas.png "Facemask")
-![Alt text](https://github.com/azamora2/W251/blob/master/FinalProjectandres_sin_cubrebocas.png "No facemask")
+![Alt text](https://github.com/azamora2/W251/blob/master/FinalProject/carmen.jpg "carmen")
+![Alt text](https://github.com/azamora2/W251/blob/master/FinalProject/andres_cubrebocas.jpg "Facemask")
+![Alt text](https://github.com/azamora2/W251/blob/master/FinalProject/andres_sin_cubrebocas.jpg "No facemask")
