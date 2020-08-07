@@ -3,6 +3,7 @@ The motivation behind this project was to build a face mask detection model that
 ## instructions for running the face mask detector
 - If you want to create your own dataset dowload your own set of images with the `download_faces.sh` script in this file
 - Afterwads you can label half of them by putting the png of a facemask on top of it using picmonkey.com
+- Make a data folder with two subfolders, one with the mask images and the other without the mask images
 
 ## To Run the code once you have the data
 - First you need to run the training in a v100 vsi with flavor AC2_8X60X10
